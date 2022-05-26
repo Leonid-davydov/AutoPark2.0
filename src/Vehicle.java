@@ -1,18 +1,14 @@
 public class Vehicle implements Comparable<Vehicle> {
-    private final VehicleType vehicleType;
-    private final String modelName;
+    private VehicleType vehicleType;
+    private String modelName;
     private String registrationNumber;
     private int weight;
-    private final int manufactureYear;
+    private int manufactureYear;
     private int mileage;
     private Color color;
     private int volume;
 
-    public Vehicle() {
-        this.vehicleType = null;
-        this.modelName = null;
-        this.manufactureYear = 0;
-    }
+    public Vehicle() {}
 
     public Vehicle(VehicleType vehicleType, String modelName, String registrationNumber,
                    int weight, int manufactureYear, int mileage, Color color) {
